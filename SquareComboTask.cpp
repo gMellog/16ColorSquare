@@ -1,6 +1,8 @@
 
 #include "SquareComboTask.h"
 
+
+
 SquareComboTask::SquareComboTask()
     :
     squareNums{}
@@ -48,9 +50,9 @@ void SquareComboTask::startGuessing(std::size_t i, std::size_t j) const
     if (squareIsFull())
     {
         #ifdef _DEBUG
-                std::cout << "\nSquare constructed!!!\n\n";
+                std::cerr << "\nSquare constructed!!!\n\n";
                 showSquare();
-                std::cout << std::endl;
+                std::cerr << "\n";
         #endif
 
         ++squareNums;
